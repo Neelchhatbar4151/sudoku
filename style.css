@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.title {
+    /* color: white; */
+    text-align: center;
+    font-size: 40px;
+    /* padding-top: 30px; */
+    margin-bottom: 30px;
+    min-width: 100px;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    height: inherit;
+    background-color: black;
+    min-width: 600px;
+}
+
+.semigridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 63.3px);
+    grid-template-rows: repeat(3, 63.3px);
+    gap: 5px;
+    height: inherit;
+    background-color: rgb(206, 206, 206);
+}
+
+.ingrid {
+    background-color: white;
+}
+
+.grid {
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: white;
+}
+
+input {
+    width: 58px;
+    height: 58px;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.solve {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: rgb(156, 251, 219);
+    box-shadow: 10px 5px 0px rgb(70, 82, 82);
+}
+
+.hide {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .hide {
+        display: block;
+    }
+    .container {
+        display: none;
+    }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="hide">
+            <p>Not supported on Mobile and Mini Tablets</p>
+        </div>
+        <div class="container">
+            <div class="title">
+                Sudoku
+                <button class="solve" onclick="Calculate()">Solve</button> r
+            </div>
+            <div>
+                <div class="gridContainer">
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="00" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="01" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="02" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="03" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="04" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="05" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="06" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="07" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="08" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="10" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="11" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="12" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="13" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="14" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="15" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="16" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="17" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="18" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="20" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="21" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="22" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="23" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="24" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="25" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="26" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="27" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="28" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="30" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="31" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="32" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="33" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="34" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="35" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="36" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="37" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="38" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="40" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="41" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="42" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="43" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="44" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="45" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="46" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="47" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="48" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="50" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="51" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="52" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="53" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="54" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="55" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="56" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="57" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="58" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="60" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="61" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="62" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="63" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="64" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="65" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="66" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="67" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="68" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="70" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="71" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="72" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="73" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="74" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="75" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="76" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="77" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="78" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="semigridContainer">
+                            <div class="ingrid">
+                                <input id="80" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="81" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="82" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="83" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="84" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="85" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="86" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="87" type="number" />
+                            </div>
+                            <div class="ingrid">
+                                <input id="88" type="number" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
